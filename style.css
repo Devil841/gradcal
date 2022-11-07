@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.parent{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(21, 7, 54);
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    height: 68vh;
+    width: 24vw;
+    background-image: linear-gradient(to top left, rgb(37, 37, 129), rgb(56, 0, 102));
+    border-radius: 20px;
+}
+.first{
+    margin-top: 50px;
+}
+
+#billtotal{
+    margin-left: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.inputbox{
+    width: 90%;
+    margin-left: 20px;
+    padding: 12px 20px;
+    color: white;
+    padding: 6px 20px;
+    background-image: linear-gradient(to bottom left, rgb(11, 0, 95), rgb(47, 0, 46));
+    border: none;
+    border-radius: 20px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+::placeholder{
+    color: white;
+}
+textarea:focus,input:focus {
+    outline: none;
+}
+.second{
+    margin-bottom: 90px;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+}
+
+#plus{
+    background-image: linear-gradient(to bottom left, rgb(30, 0, 255), rgb(104, 0, 103));
+    border: none;
+    padding: 5px 10px;
+    border-radius: 24px;
+    font-size: 14px;
+}
+#min{
+    background-image: linear-gradient(to bottom left, rgb(30, 0, 255), rgb(104, 0, 103));
+    border: none;
+        padding: 5px 12px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+#num{
+    display: inline-block;
+}
+#peo{
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+#result{
+    font-size: 24px;
+}
+.people{
+    margin-left: 20px;
+}
+.cost{
+    margin-right: 28px;
+    margin-bottom: 20px;
+}
