@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+         rel="stylesheet"
+      />
 
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="parent">
-        <div class="cal">
+   <body>
+      <div class="parent">
+         <div class="cal">
             <div class="first">
-                <p id="billtotal">Bill total</p>
-                <input type="number" class="inputbox" id="bill" placeholder="₹ 0.00" onkeyup="print()">
+               <p id="billtotal">Bill total</p>
+               <div class="inputdiv">
+                  <input
+                     type="number"
+                     class="inputbox"
+                     id="bill"
+                     placeholder="₹ 0.00"
+                     onkeyup="print()"
+                  />
+               </div>
             </div>
-
-
-
 
             <div class="second">
-                <div class="first">
-                    <p id="billtotal">GST %</p>
-                    <input type="number" class="inputbox" id="gst" placeholder="% 0.00" onkeyup="print()">
-                </div>
-
-                <div class="first">
-                    <p id="billtotal">Tip %</p>
-                    <input type="number" class="inputbox" id="tip" placeholder="% 0.00" onkeyup="print()">
-                </div>
+               <div class="first">
+                  <p id="billtotal">GST %</p>
+                  <div class="inputdiv">
+                     <input
+                        type="number"
+                        class="inputbox"
+                        id="gst"
+                        placeholder="% 0.00"
+                        onkeyup="print()"
+                     />
+                  </div>
+               </div>
             </div>
-
-
-
 
             <div class="third">
-                <div class="people">
-                    <p id="peo">People</p>
-                    <button id="plus">+</button>
-                    <p id="num">1</p>
-                    <button id="min" onclick="remove()">-</button>
-                </div>
-
-
-                <div class="cost">
-                    <p id="total">Total per person</p>
-                    <p id="result">₹0.00</p>
-                </div>
+               <p id="billtotal">Tip %</p>
+               <div class="inputdiv">
+                  <input
+                     type="number"
+                     class="inputbox"
+                     id="tip"
+                     placeholder="% 0.00"
+                     onkeyup="print()"
+                  />
+               </div>
             </div>
 
+            <div class="fourth">
+               <div class="people">
+                  <p id="peo">People</p>
+                  <button id="plus">+</button>
+                  <p id="num">1</p>
+                  <button id="min" onclick="remove()">-</button>
+               </div>
 
+               <div class="cost">
+                  <p id="total">Total per person</p>
+                  <p id="result">₹0.00</p>
+               </div>
+            </div>
+         </div>
+      </div>
 
-
-        </div>
-    </div>
-
-
-    <script src="script.js"></script>
-</body>
-
+      <script src="script.js"></script>
+   </body>
 </html>
